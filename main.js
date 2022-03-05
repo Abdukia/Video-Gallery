@@ -2,13 +2,13 @@ const video = document.querySelector(".video");
 const videoPlayer = document.querySelector(".video .videoPlayer");
 const closeBtn = document.querySelector(".video .close-btn");
 
-const playVideo = (videoUrl) => {   
+const playVideo = (videoId) => {   
 
     if (document.pictureInPictureElement == null) {
         video.classList.add("active");
     }
 
-    videoPlayer.src = videoUrl;
+    videoPlayer.src = 'https://drive.google.com/uc?export=download%Id=${videoId'}
 }
 
 closeBtn.addEventListener("click", () => {
